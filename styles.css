@@ -1,6 +1,20 @@
-body {
-    background-color: #0a0d5c;
-    font-family:'Rubik',sans-serif;
+:root {
+  --cyan:#12b8ff; 
+  --azure:#2a6bff; 
+  --indigo:#1a1fb5; 
+  --navy:#0a0d5c;
+  --ice:#eaf6ff; 
+  --blush:#f7c9d4; 
+  --white:#fff;
+  --cut:4vw;
+}
+
+body{
+  font-family:'Rubik',sans-serif;
+  color:var(--navy);
+  background:var(--navy);
+  line-height:1.6;
+  overflow-x:hidden;
 }
 
 h1,h2,h3, p, li, dd {
