@@ -3,101 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> 
-    <title>Portfolio</title>
+    <title>Reze | Portfolio 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="topbar">
-        <h1>Portfolio 2026</h1>
-        <nav>
+    <!-- Page-load wipe (pure CSS) -->
+    <div class="wipe" aria-hidden="true"><i></i><i></i><i></i></div>
+
+    <header class="topbar">
+        <a class="logo" href="#home">Portfolio 2026</a>
+        <nav aria-label="Main">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#certification">Certs</a>
+            <a href="#education">Profile</a>
             <a href="#skill">Skills</a>
-            <a href="#project">Projects</a>
+            <a href="#certification">Certs</a>
+            <a href="#project">Quests</a>
         </nav>
-    </div>
-    <section id="home">
-        <h1>Hello World, I'm Reze</h1>
-        <nav>
-            <a href="https://www.facebook.com/rezebryleybanez">Facebook</a>
-            <a href="https://www.linkedin.com/in/reze-bryle-ybanez">LinkedIn</a>
-            <a href="https://github.com/Quakerfish">Github</a>
-        </nav>
-    </section>
+    </header>
 
-    <section id="about">
-        <h2>About me</h2>
-        <p>A 2nd-year IT student at Southwestern University passionate about exploring the World of Software Engineering and Cybersecurity.</p>
-    </section>
+    <main>
+        <section id="home" class="dark hero">
+            <span class="star s1"></span><span class="star s2"></span><span class="star s3"></span>
+            <div class="hero-inner">
+                <p class="tag">IT Student / Developer</p>
+                <h1>Hello World,<br><span>I'm Reze</span></h1>
+                <nav class="socials" aria-label="Social links">
+                    <a href="https://www.facebook.com/rezebryleybanez">Facebook</a>
+                    <a href="https://www.linkedin.com/in/reze-bryle-ybanez">LinkedIn</a>
+                    <a href="https://github.com/Quakerfish">Github</a>
+                </nav>
+            </div>
+        </section>
 
-    <section id="education">
-        <h2>Educational Background</h2>
-        <ul>
-            <li>Southwestern University</li>
-            <dd>Current Studying in Southwestern University in the Information Technology Course. I first started studying in Southwestern University when I was in Senior High School on the GASIT course. Now Im 2nd Year BSIT Student in Southwestern University.</dd>
-        </ul>
-    <!--Add Educational Background, probably gonna use ordered or unordered list-->
-    </section>
+        <section id="about" class="light">
+            <h2>About me</h2>
+            <p class="lead">A 2nd-year IT student at Southwestern University passionate about exploring the world of Software Engineering and Cybersecurity.</p>
+        </section>
 
-    <section id="skill">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java</li>
-            <dd>Proficient in Programming Language of Java, able to build Systems and understand the framework, functions, and process of building a System in Java.</dd>
-            
-            <li>Python</li>
-            <dd>Intermediate in Python Language able to develop systems such as a Calculator or a Simple Game using Libraries and functions. Developed API codes in Python such as FastAPI to connect to databases.</dd>
-            
-            <li>HTML</li>
-            <dd>Quite experienced in HTML with an understanding on HTML tags and elements and how HTML, CSS, and Javascript connect to create a website or web application. Developed websites and Web Applications that are connected to Databases and API to run and function. Experienced deploying a website using deployment platforms such as Vercel & Wesmer.</dd>
-           
-            <li>CSS</li>
-            <dd>Clear understanding of CSS and how CSS connects to HTML and Javascript, able to design simple and functional web applications or website but not advanced in the CSS space to fully create Professional Level Frontend.</dd>
-            
-            <li>Javascript</li>
-            <dd>Proficient in Javascript Language with a clear understanding on how functions and frameworks work in javascript and how they connect to HTML & CSS or other programming language in web development.</dd>
-            
-            <li>PHP</li>
-            <dd>PHP is a language I'm quiet familiar with but not advanced into it, Im able to create APIs functions to connect applications or systems to the database so they are able to form a Request & Response communication.</dd>
-        </ul>
-    <!--All the programming languages that I know-->
-    </section>
+        <section id="education" class="dark">
+            <h2>Educational Background</h2>
+            <article class="card">
+                <h3>Southwestern University</h3>
+                <p>Currently studying Information Technology. I started at Southwestern University in Senior High School on the GAS-IT course, and I'm now a 2nd Year BSIT student.</p>
+            </article>
+        </section>
 
-    <section id="certification">
-        <h2>Certifications</h2>
-        <div class="cert-card">
-            <img src="assets/Network Essentials Certification.jpg" alt="Network Essentials">
-            <h3>Cisco Network Academy Essentials Certification</h2>
-        </div>
+        <section id="skill" class="light">
+            <h2>Skills</h2>
+            <ul class="stats">
+                <li data-level="90">
+                    <h3>Java</h3>
+                    <div class="bar"><b></b></div>
+                    <p>Proficient in Java. Able to build systems and understand the framework, functions, and process of building a system in Java.</p>
+                </li>
+                <li data-level="70">
+                    <h3>Python</h3>
+                    <div class="bar"><b></b></div>
+                    <p>Intermediate. Built systems such as a calculator and a simple game using libraries and functions. Developed API code with FastAPI to connect to databases.</p>
+                </li>
+                <li data-level="80">
+                    <h3>HTML</h3>
+                    <div class="bar"><b></b></div>
+                    <p>Quite experienced with HTML tags and elements, and how HTML, CSS, and JavaScript connect to make a website or web app. Built sites connected to databases and APIs, and deployed them on platforms like Vercel and Wesmer.</p>
+                </li>
+                <li data-level="60">
+                    <h3>CSS</h3>
+                    <div class="bar"><b></b></div>
+                    <p>Clear understanding of how CSS connects to HTML and JavaScript. Able to design simple, functional web apps, but not yet advanced enough for professional-level frontend.</p>
+                </li>
+                <li data-level="85">
+                    <h3>JavaScript</h3>
+                    <div class="bar"><b></b></div>
+                    <p>Proficient. Clear understanding of how functions and frameworks work in JavaScript and how they connect to HTML, CSS, and other languages in web development.</p>
+                </li>
+                <li data-level="55">
+                    <h3>PHP</h3>
+                    <div class="bar"><b></b></div>
+                    <p>Quite familiar, though not advanced. Able to create API functions that connect applications to a database for request and response communication.</p>
+                </li>
+            </ul>
+        </section>
 
-        <div class="cert-card">
-            <img src="assets/Networking Basics Certification.jpg" alt="Network Basics">
-            <h3>Cisco Network Academy Basics Certification</h2>
-        </div>
-       
-        <!-- <ul>
-            <li><a href="#">Cisco Network Academy Basics</a></li>
-            <li><a href="#">Cisco Network Academy Essentials</a></li>
-            <li><a href="#">Java Certifications</a></li>
-        </ul> -->
-    <!--All my Programming Certifications (eg...Cisco Net Acad)-->
-    </section>
+        <section id="certification" class="dark">
+            <h2>Certifications</h2>
+            <div class="certs">
+                <figure class="cert-card">
+                    <img src="assets/Network Essentials Certification.jpg" alt="Network Essentials certificate">
+                    <figcaption>Cisco Network Academy Essentials Certification</figcaption>
+                </figure>
+                <figure class="cert-card">
+                    <img src="assets/Networking Basics Certification.jpg" alt="Networking Basics certificate">
+                    <figcaption>Cisco Network Academy Basics Certification</figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <section id="project">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <a href="https://biyaheadmin.vercel.app/">Biyahe Admin Website</a>
-                , <a href="https://github.com/Quakerfish/Biyahe_Admin/">Biyahe Admin Website Github Repository</a>
-                <dd>Biyahe Admin Portal, admins can add, edit, manage the jeepney route paths displayed in the Biyahe Android Application</dd>
-            </li>
-            
-            <li>
-                <a href="https://github.com/Quakerfish/Biyahe">Biyahe: Jeepney Route Tracker in Cebu City</a>
-                <dd>An Android application that tracks the fixed jeepney routes of each jeepney code in Cebu City</dd>
-            </li>
-        </ul>
-    </section>
+        <section id="project" class="light">
+            <h2>Projects</h2>
+            <div class="quests">
+                <article class="card">
+                    <h3>Biyahe Admin Website</h3>
+                    <p>Admin portal to add, edit, and manage the jeepney route paths shown in the Biyahe Android application.</p>
+                    <p class="links">
+                        <a href="https://biyaheadmin.vercel.app/">Live site</a>
+                        <a href="https://github.com/Quakerfish/Biyahe_Admin/">GitHub repo</a>
+                    </p>
+                </article>
+                <article class="card">
+                    <h3>Biyahe: Jeepney Route Tracker in Cebu City</h3>
+                    <p>An Android application that tracks the fixed jeepney routes of each jeepney code in Cebu City.</p>
+                    <p class="links">
+                        <a href="https://github.com/Quakerfish/Biyahe">GitHub repo</a>
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
