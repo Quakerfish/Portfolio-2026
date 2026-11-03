@@ -8,6 +8,11 @@
   --white:#fff;
   --cut:4vw;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 *::-webkit-scrollbar {
   display: none;
 }
