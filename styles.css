@@ -26,7 +26,10 @@ h1,h2,h3, p, li, dd {
 }
 
 .topbar {
-    background-color: white;
+    position: fixed;
+    inset: 0 0 auto 0; /*Shape matches the width of the screen*/
+    background-color: var(--white);
+    box-sizing: border-box;
 }
 
 .topbar h1 {
